@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>ICP - TEST AUDIOMETRICO </title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+<body>
+<div class="se-pre-con"></div>
+<div class="text-center">
+    <h1>ICP - TEST AUDIOMETRICO</h1>
+    <audio src="resources/audio/500Hz-L.mp3" id="song1" style="display: none;"></audio>
+    <audio src="resources/audio/500Hz-R.mp3" id="song2" style="display: none;"></audio>
+    <audio src="resources/audio/1KHz-L.mp3" id="song3" style="display: none;"></audio>
+    <audio src="resources/audio/1KHz-R.mp3" id="song4" style="display: none;"></audio>
+    <audio src="resources/audio/2KHz-L.mp3" id="song5" style="display: none;"></audio>
+    <audio src="resources/audio/2KHz-R.mp3" id="song6" style="display: none;"></audio>
+    <audio src="resources/audio/4KHz-L.mp3" id="song7" style="display: none;"></audio>
+    <audio src="resources/audio/4KHz-R.mp3" id="song8" style="display: none;"></audio>
+    <audio src="resources/audio/8KHz-L.mp3" id="song9" style="display: none;"></audio>
+    <audio src="resources/audio/8KHz-R.mp3" id="song10" style="display: none;"></audio>
+    <br><br><br>
+    <button id="start2" type="button" class="btn btn-info btn-alterstart" data-dismiss="modal">Comenzar
+        <span class="glyphicon glyphicon-play"></span>
+    </button>
+    <br><br><br>
+    <button id="btn-listen" class="glyphicon glyphicon-record playbutton" ></button>
+
+    <div class="result-container">
+        <table class="table-custom">
+            <tr>
+                <th class="row-custom"></th>
+                <th class="row-custom">500Hz</th>
+                <th class="row-custom">1KHz</th>
+                <th class="row-custom">2KHz</th>
+                <th class="row-custom">4KHz</th>
+                <th class="row-custom">8KHz</th>
+            </tr>
+            <tr>
+                <th class="row-custom">L</th>
+                <th class="row-custom"><span id="Resultado1"></span></th>
+                <th class="row-custom" ><span id="Resultado3"></span></th>
+                <th class="row-custom" ><span id="Resultado5"></span></th>
+                <th class="row-custom" ><span id="Resultado7"></span></th>
+                <th class="row-custom" ><span id="Resultado9"></span></th>
+            </tr>
+            <tr>
+                <th class="row-custom">R</th>
+                <th class="row-custom" ><span id="Resultado2"></span></th>
+                <th class="row-custom" ><span id="Resultado4"></span></th>
+                <th class="row-custom" ><span id="Resultado6"></span></th>
+                <th class="row-custom" ><span id="Resultado8"></span></th>
+                <th class="row-custom" ><span id="Resultado10"></span></th>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- /.modal -->
+<div id="instructions-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title modal-titulo">Examen Audiometrico</h3>
+            </div>
+            <div class="modal-body">
+                <h4 class="modal-title modal-titulo">Instrucciones</h4><br>
+                <ul>
+                    <li class="modal-pagraph">Para una correcta evaluación se recomienda el uso de auriculares.</li>
+                    <li class="modal-pagraph">Procure realizar el examen en un ambiente libre de ruido.</li>
+                    <li class="modal-pagraph">Si detecta que el volumen del sonido es demasiado alto, reduzcalo.</li>
+                    <li class="modal-pagraph">Sus oidos serán evaluados individualmente, el primero será el izquierdo.
+                    </li>
+                    <li class="modal-pagraph">Durante el examen, solo debe presionar el botón <span
+                            class="glyphicon glyphicon-record"></span> cuando escuche un sonido.
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button id="start" type="button" class="btn btn-info btn-alterstart" data-dismiss="modal">Comenzar
+                    <span class="glyphicon glyphicon-play"></span>
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<script src="js/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script src="js/script.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

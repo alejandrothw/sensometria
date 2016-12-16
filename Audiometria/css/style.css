@@ -1,0 +1,96 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8bc8e0;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.modal-titulo {
+    color: #0c86b7;
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal-pagraph {
+    color: #0c86b7;
+    text-align: left;
+}
+
+.result-container {
+    overflow-x: auto;
+}
+
+.table-custom {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.row-custom {
+    border: none;
+    text-align: center;
+    padding: 8px;
+}
+
+.success-icon{
+    color: #13cd1c;
+}
+
+.failed-icon{
+    color: #9c0000;
+}
+
+.playbutton{
+    font-size: 6rem;
+    background-color: transparent;
+    border: transparent;
+    box-shadow: none;
+    -webkit-transition: color .2s;
+}
+
+.playbutton:active{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: red;
+}
+
+.playbutton:active,
+.playbutton:focus,
+.playbutton.active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-alterstart{
+    border-bottom: 2px #1b6d85 solid;
+    border-right: 2px #1b6d85 solid;
+}
+
+.modal-content{
+    background-color: #cdecff;
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../resources/img/Preloader_21.gif) center no-repeat #fff;
+}
+
+th{
+    text-align: center;
+}

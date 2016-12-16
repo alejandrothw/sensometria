@@ -1,0 +1,278 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background-color: #81db82;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+}
+.lvl1{background-color: #00ff15;}
+.lvl2{background-color: #71ff12;}
+.lvl3{background-color: #b1ff1d;}
+.lvl4{background-color: #d9ff0f;}
+.lvl5{background-color: #e9ff00;}
+.lvl6{background-color: #ffc50e;}
+.lvl7{background-color: #ff890e;}
+.lvl8{background-color: #ff530b;}
+.lvl9{background-color: #ff0900;}
+.lvl10{background-color: #a80800;}
+.lvl11{background-color: #6c0400;}
+
+.grid{
+    height: 80%;
+    width: 30%;
+    flex-direction: column;
+    display: flex;
+    background-color: #0f0f0f;
+}
+
+.grid-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.grid-window{
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.modal-titulo {
+    color: #259256;
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal-pagraph {
+    color: #259256;
+    text-align: left;
+}
+
+.modal-content {
+    background-color: #a3eeb4;
+}
+
+.no-js #loader {
+    display: none;
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../img/Preloader_21.gif) center no-repeat #fff;
+}
+
+.app-title{
+
+}
+
+@media (max-width: 600px) {
+    .app-title{
+        font-size: 120%;
+    }
+}
+
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    align-items: center;
+    height: 100% !important;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.flex-item {
+    background: transparent;
+    width: 33%;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.left-control{
+    text-align:left;
+    padding-left: 12%;
+}
+
+.middle-control {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.right-control{
+    text-align: right;
+    padding-right: 12%;
+}
+
+.btn-action{
+    transition: color .1s;
+    font-size: 80%;
+}
+
+.btn-action:hover{
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    .btn-action {
+        font-size: 150%;
+    }
+}
+
+.btn-action:active{
+    color: #7bd07c;
+    background-color: #1b6b3e;
+    border-radius:50%;
+    font-size: 75%;
+}
+
+@media (min-width: 600px) {
+    .btn-action:active {
+        font-size: 140%;
+    }
+}
+
+.wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+    font-weight: bold;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.header {
+    height: 14%
+}
+
+.footer {
+    height: 20%;
+    background-color: #1b6d85;
+}
+
+.main {
+    text-align: left;
+    display: flex;
+    height: 66%;
+    background-color: transparent;
+    padding: 0;
+}
+
+.car-container{
+    height: 100%;
+    width: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.left-car{
+    justify-content: flex-end;
+}
+
+.right-car{
+    justify-content: flex-start;
+}
+
+.car-item{
+
+}
+
+
+.palet{
+    display: none;
+    height: 100%;
+    width:5%;
+    background-color: transparent;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upper-palet{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: #000 1px solid;
+}
+
+.lower-palet{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top: #000 1px solid;
+}
+
+.palet-box{
+    height: 20%;
+    width: 100%;
+    border: #000 1px solid;
+}
+@media (max-width: 600px) {
+    .car-item {
+        height: 175px;
+    }
+}
+
+.car-item2{
+    display: none;
+    height: 20rem;
+}
+
+.car-item2-edited
+{
+    display: none;
+    height: 20rem;
+}
+@media (max-width: 400px) {
+    .car-item {
+        height: 105px;
+    }
+    .car-item2{
+        height: 85px;
+    }
+}
